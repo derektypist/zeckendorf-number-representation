@@ -9,7 +9,7 @@ function getNumberInfo() {
         txt += `Invalid Input.  Please enter a whole number between 0 and 1000.`;
     } else {
         txt += `You have entered the number ${num}. <p>`;
-        txt += `Zeckendorf Number Representation of ${num} is ${zeckendorf(num)}`;
+        txt += `Zeckendorf Number Representation of ${num} is ${zeckendorf(num)}.`;
     }
 
     // Display Information in the Browser
