@@ -20,10 +20,14 @@ function getNumberInfo() {
 function zeckendorf(n) {
     if (n==0) return n.toString();
     let fib = [2,1];
+
+    // Build Fibonacci Sequence
     while (fib[0]<n) {
         fib.unshift(fib[0]+fib[1]);
     }
     let dig = [];
+
+    // Loop Through the Fibonacci Sequence
     fib.forEach(function(f) {
         if (f<=n) {
             dig = dig + [1];
@@ -33,6 +37,15 @@ function zeckendorf(n) {
         }
     });
 
-    // If the first digit is 1 return all the digits, otherwise remove the zero
+    /* 
+        If the first digit is 1 return all the digits
+        Otherwise Remove the Leading Zero, so 01 becomes 1 for example
+    */
     return dig[0]==1 ? dig : dig.slice(1);
+}
+
+// Function to Clear Information
+function clearInfo() {
+    let txt="";
+    document.getElementById("numinfo").innerHTML = txt;
 }
