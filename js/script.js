@@ -27,7 +27,7 @@ function zeckendorf(n) {
     }
     let dig = [];
 
-    // Loop Through the Fibonacci Sequence
+    // Loop Through the Fibonacci Sequence and add 1 or 0 to the digits
     fib.forEach(function(f) {
         if (f<=n) {
             dig = dig + [1];
