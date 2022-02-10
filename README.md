@@ -47,3 +47,13 @@ Ensure all user stories have been met.
 
 Deployed on [GitHub Pages](https://derektypist.github.io/zeckendorf-number-representation) at the main branch.
 
+## Credits
+
+### Content
+
+Code in `script.js` for the function `zeckendorf(n)` taken from Rosetta Code (Python, Shorter Version), which as accessed in February 2022.
+
+### Acknowledgements
+
+- [Rosetta Code](https://www.rosettacode.org)
+- [FreeCodeCamp](https://www.freecodecamp.org)
